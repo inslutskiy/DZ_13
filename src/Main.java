@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        MagicBox box1 = new MagicBox();
+        MagicBox box1 = new MagicBox(10);
 
         for (int i = 0; i <= 60; i += 5) {
             System.out.println(box1.add(i));

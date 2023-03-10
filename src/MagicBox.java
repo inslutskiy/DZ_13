@@ -2,9 +2,13 @@ import java.util.Random;
 
 public class MagicBox<T> {
 
-    protected T[] items = (T[]) new Object[10];
+    protected T[] items;
 
-    boolean add(T item) {
+    public MagicBox (int x) {
+        T[] items = (T[]) new Object[x];
+    }
+
+    public boolean add(T item) {
         for (int i = 0; i < items.length; i++) {
             if (items[i] == null) {
                 items[i] = item;
